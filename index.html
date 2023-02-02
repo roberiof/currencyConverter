@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Currency Converter </title>
+  <script type="module" src="index.js" defer ></script>   
+  <script src="https://kit.fontawesome.com/b64e2a7bcd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/css/style.css">
+</head>
+<body>
+  <header> 
+    <h1> Currency Converter</h1>
+  </header>
+
+  <form>
+    <div id="labelInputDiv">
+      <label for="value"> Insert a value: </label>
+      <input type="text" id="value">
+    </div>
+    
+    <div id="currenciesDiv">
+
+      <div>
+        <label for="curIn"> Current</label>
+        <input type="search" list="currencies" id="curIn">
+        <datalist id="currencies">
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="USD"> U.S Dollar </option>
+            <option value="BRL"> Real </option>
+            <option value="EUR"> European Euro </option>
+            <option value="JPY"> Japanese Yen </option>
+            <option value="GBP"> British Pound  </option>
+            <option value="CHF"> Swiss Franc </option>
+            <option value="CAD"> Canadian Dollar </option>
+            <option value="ZAR"> South African Rand  </option>
+        </datalist>
+      </div>
+
+      <i class="fa-solid fa-arrow-right-arrow-left" id="switchIcon"></i>
+
+      <div>
+        <label for="curOut"> Desired </label>
+        <input type="search" list="currencies" id="curOut">
+        <datalist id="currencies">
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="USD"> U.S Dollar </option>
+            <option value="BRL"> Real </option>
+            <option value="EUR"> European Euro </option>
+            <option value="JPY"> Japanese Yen </option>
+            <option value="GBP"> British Pound  </option>
+            <option value="CHF"> Swiss Franc </option>
+            <option value="CAD"> Canadian Dollar </option>
+            <option value="ZAR"> South African Rand  </option>
+        </datalist>
+      </div>  
+    </div>
+
+    <input type="submit" id="submitBtn" value="CONVERT">
+
+    <div id="result">
+      <p>Result ... </p>
+    </div>
+  </form>
+</body>
+</html>
