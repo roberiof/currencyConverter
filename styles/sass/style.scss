@@ -1,0 +1,112 @@
+$bgColor: #000000c9;
+$formColor: #d3d3d3;
+$inputColor: #000000;
+$labelResultColor: #808080;
+$titleColor: #ffffff;
+$maxWidthForm: 350px; 
+
+*{
+  margin: 0;
+  padding:0;
+  outline: none;
+  border: 0 ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  font-weight: bold;
+  background-color: $bgColor;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+  input{
+    letter-spacing: 2px;
+    color: $inputColor;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  label{
+    color: $labelResultColor;
+  }
+}
+
+header{
+  color: $titleColor;
+  padding: 50px;
+  h1{
+    margin: auto;
+    padding: 15px;
+    border-bottom: 2px solid black;
+    width: 90%;
+    max-width: $maxWidthForm - 30;
+    text-align: center;
+  }
+}
+
+form{
+  border-radius: 5px;
+  margin: auto;
+  background-color: $formColor;
+  width: 90%;
+  max-width: $maxWidthForm;
+  padding: 50px 30px;
+  gap: 10px;
+
+  #labelInputDiv{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    input{
+      padding: 10px;
+    }
+  }
+
+  #currenciesDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    div{
+      display: flex;
+      flex-direction: column;
+    }
+
+    input{
+      width: 130px;
+      text-align: center;
+      padding: 10px 0px 10px 20px;
+    }
+
+    i{
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 25px;
+    }
+  }
+
+  #submitBtn{
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    &:hover{
+      transition: all 500ms;
+      opacity: .5;
+      transform: scale(1.1);
+    }
+  }
+
+  #result{
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    p{
+      color: $labelResultColor;
+      padding: 15px 20px;
+    }
+  }
+}
+
