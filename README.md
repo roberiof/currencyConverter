@@ -2,9 +2,9 @@
 Simple project using API restful to consume AwesomeAPI and get currencies values.
 
 - Technologies used:  
---- SASS (Syntactically Awesome Style Sheets) to CSS
---- BABEL to make JS accessible to more devices (mainly the old ones)
+**SASS (Syntactically Awesome Style Sheets) to CSS
+**BABEL to make JS accessible to more devices (mainly the old ones)
 
 - Processes used in JS:
---- Using async functions and manipulating promises 
---- Modularizing JS with ES Modules 
+**Using async functions and manipulating promises 
+**Modularizing JS with ES Modules 
